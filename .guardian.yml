@@ -6,3 +6,6 @@ run: shards install
 ---
 files: ./spec/**/*.cr
 run: crystal spec
+---
+files: ./src/**/*.cr
+run: ./bin/ameba

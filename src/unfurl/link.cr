@@ -1,7 +1,9 @@
-module Unfurl
-  class MissingResolverError < Exception; end
+require "../macros"
 
+module Unfurl
   class Link
+    throws MissingResolverError
+
     @@config = Config.new
 
     getter uri

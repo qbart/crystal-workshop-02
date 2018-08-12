@@ -9,7 +9,7 @@ describe Unfurl::Link do
     end
 
     it "raises error when resolvers are not specified" do
-      expect_raises(Unfurl::MissingResolverError) do
+      expect_raises(Unfurl::Link::MissingResolverError) do
         Unfurl::Link.new(URI.parse("http://example.org"))
       end
     end

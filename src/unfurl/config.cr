@@ -1,6 +1,10 @@
+require "./resolver"
+
 module Unfurl
+  alias ResolverList = Array(Resolver.class)
+
   class Config
-    @resolvers = [] of Resolver.class
+    @resolvers = ResolverList.new
 
     property resolvers
   end

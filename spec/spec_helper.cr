@@ -4,6 +4,6 @@ require "../src/unfurl/**"
 
 Spec.before_each do
   Unfurl::Link.configure do |config|
-    config.resolvers = [] of Unfurl::Resolver.class
+    config.resolvers = Unfurl::ResolverList.new
   end
 end
