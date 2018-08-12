@@ -1,0 +1,8 @@
+files: ./src/**/*.cr
+run: crystal run ./src/unfurl.cr
+---
+files: ./shard.yml
+run: shards install
+---
+files: ./spec/**/*.cr
+run: crystal spec

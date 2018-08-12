@@ -1,0 +1,18 @@
+name: unfurl
+version: 0.1.0
+
+authors:
+  - bart
+
+targets:
+  unfurl:
+    main: src/unfurl.cr
+
+crystal: 0.25.1
+
+license: MIT
+
+development_dependencies:
+  webmock:
+    github: manastech/webmock.cr
+    branch: master
